@@ -13,7 +13,6 @@ public class CreateOrderRequest implements Serializable{
     private int id;
     private Date arrivalDate;
     private Date departureDate;
-    private int sourceCity;
     private int targetCity;
 
     public int getId() {
@@ -38,14 +37,6 @@ public class CreateOrderRequest implements Serializable{
 
     public void setDepartureDate(Date departureDate) {
         this.departureDate = departureDate;
-    }
-
-    public int getSourceCity() {
-        return sourceCity;
-    }
-
-    public void setSourceCity(int sourceCity) {
-        this.sourceCity = sourceCity;
     }
 
     public int getTargetCity() {
